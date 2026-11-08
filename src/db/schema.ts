@@ -10,3 +10,9 @@ export const cafes = sqliteTable('cafes', {
 
 export type Cafe = typeof cafes.$inferSelect;
 export type NuevoCafe = typeof cafes.$inferInsert;
+export const valoraciones = sqliteTable('valoraciones', {
+  id: integer('id').primaryKey({ autoIncrement: true }),
+  nombre: text('nombre').notNull(),
+  comentario: text('comentario').notNull(),
+  puntuacion: integer('puntuacion').notNull(),
+});
