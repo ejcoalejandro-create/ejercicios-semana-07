@@ -10,14 +10,25 @@ export default function Inicio() {
 
       <ul className="mt-6 space-y-3">
         <li>
-          <Link href="/catas" className="font-medium text-amber-800 hover:underline">
-            Ejercicio 3: libro de catas →
-          </Link>
-        </li>
-        <li>
           <a href="/api/estado" className="font-medium text-amber-800 hover:underline">
             Ejercicio 1: GET /api/estado →
           </a>
+          <p className="mt-1 text-sm text-stone-600">
+            También hay un POST /api/reservas, que se prueba con curl (ver README).
+          </p>
+        </li>
+        <li>
+          <span className="font-medium text-stone-900">Ejercicio 2: Drizzle sin Next.js</span>
+          <p className="mt-1 text-sm text-stone-600">
+            Se hace con scripts, sin página. Ejecuta{' '}
+            <code className="rounded bg-stone-200 px-1">npx tsx src/db/consultas.ts</code> en la
+            terminal.
+          </p>
+        </li>
+        <li>
+          <Link href="/catas" className="font-medium text-amber-800 hover:underline">
+            Ejercicio 3: libro de catas →
+          </Link>
         </li>
       </ul>
     </main>
